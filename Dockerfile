@@ -63,7 +63,7 @@ RUN sed -e 's/\.\/sample\.passwd/\/etc\/ocserv\/ocpasswd/' \
 	    -e 's/192.168.1.2/8.8.8.8/' \
 	    -e 's/^route/#route/' \
 	    -e 's/^no-route/#no-route/' \
-	    -e '/\[vhost:www.example.com\]/,$d' \
+	    -e '/\[vhost:wlc.ibondar.pro\]/,$d' \
 	    -e '/^cookie-timeout = /{s/300/3600/}' \
 	    -e 's/^isolate-workers/#isolate-workers/' /tmp/ocserv-default.conf > /tmp/ocserv.conf \
 	&& cat /tmp/routes.txt >> /tmp/ocserv.conf
