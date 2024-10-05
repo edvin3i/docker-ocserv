@@ -8,8 +8,8 @@ services:
     ports:
       - 5443:5443/udp
       - 5443:5443
-#    volumes:
-#      - "/opt/ocserv:/etc/ocserv"
+    volumes:
+      - /var/lib/docker/volumes/xui_data/_data:/etc/ocserv
     sysctls:
     - net.ipv4.ip_forward=1
     cap_add:
